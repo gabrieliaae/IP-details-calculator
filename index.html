@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP details calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="error-box">
+                    <div class="arrows-box">
+                        <ion-icon name="arrow-down-outline" class="arrow arrow-1"></ion-icon>
+                        <ion-icon name="arrow-down-outline" class="arrow arrow-2 "></ion-icon>
+                        <ion-icon name="arrow-down-outline" class="arrow arrow-3"></ion-icon>
+                        <ion-icon name="arrow-down-outline" class="arrow arrow-4"></ion-icon>
+                    </div>
+                    <p class="error-text">Your IP isn't Correct</p>
+                </div>
+        <div class="ipCalculator">
+                
+                <form>
+                
+                <div class="ipAdress">
+                    <input type="text" id="ipDOM" placeholder="Enter your Ip adress (x.x.x.x)">
+                    <p class="slash">/24</p>
+                </div>
+                <div class="slider" style="width: 150px; margin:20px auto; ">
+                    <input type="range" min="0" max="32" value="24" id="slashRange" style="width: 150px;">
+                </div>
+                    <div class="details">
+                        <div>
+                            <div class="form-container">
+                                <p class="header">Subnet Mask</p>
+                                <p class="Mask text">Your Subnet Mask</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="header">WildMask</p>
+                                <p class="wildMask text">Your WildMask</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="header">Network</p>
+                                <p class="network text">Your Network</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="header">broadCast</p>
+                                <p class="broadCast text">Your BroadCast</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="header">FirtsHost Address</p>
+                                <p class="firstHost text">Your FirstHost</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="header">Lasthost Address</p>
+                                <p class="lastHost text">Your LastHost</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="header">HostRange</p>
+                                <p class="hostRange text">Your HostRange</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-container">
+                                <p class="Mask text" id="binary-Mask">Your Binary Subnet Mask</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="wildMask text" id="binary-Wildmask">Your Binary WildMask</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="network text" id="binary-Network">Your Binary Network</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="broadCast text" id="binary-broadCast">Your Binary BroadCast</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="firstHost text" id="binary-firstHost">Your Binary FirstHost</p>
+                            </div>
+                            <div class="form-container">
+                                <p class="lastHost text" id="binary-lastHost">Your Binary LastHost</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
